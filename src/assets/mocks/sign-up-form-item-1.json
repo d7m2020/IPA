@@ -1,0 +1,138 @@
+{
+  "fields": [
+    {
+      "name": "FirstName",
+      "value": "First Name Test"
+    },
+    {
+      "name": "LastName",
+      "value": "Last Name Test"
+    },
+    {
+      "name": "Location",
+      "value": [
+        {
+          "latitude": 33.5793186,
+          "longitude": 35.515914599999995
+        },
+        {
+          "latitude": 33.2708,
+          "longitude": 35.2048
+        }
+      ]
+    },
+    {
+      "name": "DateOfBirth",
+      "value": "12/12/2000"
+    },
+    {
+      "name": "DateOfBirthHijri",
+      "value": {
+        "year": 1421,
+        "month": 8,
+        "day": 16
+      }
+    },
+    {
+      "name": "Governorate",
+      "value": {
+        "id": "2"
+      }
+    },
+    {
+      "name": "City",
+      "value": {
+        "id": "3"
+      }
+    },
+    {
+      "name": "Address",
+      "value": "This is a very long Address Test. This is a very long Address Test. This is a very long Address Test. This is a very long Address Test."
+    },
+    {
+      "name": "PhoneNumber",
+      "value": "70/123456"
+    },
+    {
+      "name": "Gender",
+      "value": "1"
+    },
+    {
+      "name": "Password",
+      "value": "P@ssw0rd"
+    },
+    {
+      "name": "ConfirmPassword",
+      "value": "P@ssw0rd"
+    },
+    {
+      "name": "YearsOfExperience",
+      "value": "5"
+    },
+    {
+      "name": "Packages",
+      "value": [
+        {
+          "id": "3"
+        },
+        {
+          "id": "4"
+        }
+      ]
+    },
+    {
+      "name": "AllowOffers",
+      "value": [
+        "1"
+      ]
+    },
+    {
+      "name": "PreferredCommunicationChannel",
+      "value": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "name": "Skills",
+      "value": [
+        "Skill 1",
+        "Skill 2"
+      ]
+    },
+    {
+      "name": "CV",
+      "value": [
+        {
+          "url": "assets/mocks/document1.docx",
+          "fileName": "Document 1"
+        },
+        {
+          "url": "assets/mocks/document2.docx",
+          "fileName": "Document 2"
+        }
+      ]
+    },
+    {
+      "name": "ProfilePicture",
+      "value": "assets/mocks/profile.jpg"
+    },
+    {
+      "name": "FromTime",
+      "value": {
+        "hour": 11,
+        "minute": 35,
+        "meriden": "AM",
+        "format": 12
+      }
+    },
+    {
+      "name": "Signature",
+      "value": "<h1><strong style=\"color: rgb(0, 71, 178);\"><u>Signature Test</u></strong></h1><p><br></p><h2>Details go here...</h2>"
+    },
+    {
+      "name": "Rating",
+      "value": 9
+    }
+  ]
+}

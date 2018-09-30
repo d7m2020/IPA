@@ -1,0 +1,165 @@
+{
+  "settings": {
+    "version": "1.0",
+    "formMode": "New",
+    "sourceFormSchemas": [
+      "./assets/form-schemas/form.json"
+    ]
+  },
+  "endpoints": {
+    "get": "/assets/mocks/sign-up-form-item-by-{currentUser}.json",
+    "save": "{mainEndPointUrl}/signupfromform",
+    "submit": "{secondaryEndPointUrl}/signupfromform",
+    "lookups": {
+      "Gender": "/assets/lookups/{languageToken}/genders.json",
+      "Governorate": "/assets/mocks/lookups/{languageToken}/governorates.json",
+      "City": "/assets/mocks/lookups/{languageToken}/cities.json",
+      "Packages": "/assets/mocks/lookups/{languageToken}/packages.json",
+      "AllowOffers": "/assets/lookups/{languageToken}/allow.json",
+      "PreferredCommunicationChannel": "/assets/mocks/lookups/{languageToken}/communication-channels.json"
+    }
+  },
+  "sections": [
+    {
+      "id": 1,
+      "name": "PersonalInfo",
+      "legend": "legends.PersonalInfo",
+      "isActive": true,
+      "hideButtons": [ "clear", "submit" ]
+    },
+    {
+      "id": 2,
+      "name": "AccountInfo",
+      "legend": "legends.AccountInfo",
+      "isActive": false
+    }
+  ],
+  "fields": {
+    "Introduction": {
+      "sectionId": 1
+    },
+    "FirstName": {
+      "sectionId": 1
+    },
+    "LastName": {
+      "sectionId": 1
+    },
+    "DateOfBirth": {
+      "sectionId": 1,
+      "readonly": false,
+      "eventTriggers": {
+        "onSelect": {
+          "handler": "syncBirthDateFields"
+        }
+      }
+    },
+    "DateOfBirthHijri": {
+      "sectionId": 1,
+      "readonly": false,
+      "eventTriggers": {
+        "onSelect": {
+          "handler": "syncBirthDateFields"
+        }
+      }
+    },
+    "Governorate": {
+      "sectionId": 1,
+      "eventTriggers": {
+        "onChange": {
+          "handler": "bindCitiesByGovernorated"
+        }
+      }
+    },
+    "City": {
+      "sectionId": 1
+    },
+    "Address": {
+      "sectionId": 1
+    },
+    "Location": {
+      "sectionId": 1,
+      "defaultLocation": null
+    },
+    "Dependents": {
+      "sectionId": 1
+    },
+    "PhoneNumber": {
+      "sectionId": 1,
+      "eventTriggers": {
+        "onChange": {
+          "handler": "changePhoneNumberFormat"
+        }
+      }
+    },
+    "Gender": {
+      "sectionId": 1
+    },
+    "Password": {
+      "sectionId": 2,
+      "eventTriggers": {
+        "onChange": {
+          "handler": "validatePasswordsAreMatching"
+        }
+      }
+    },
+    "ConfirmPassword": {
+      "sectionId": 2,
+      "eventTriggers": {
+        "onChange": {
+          "handler": "validatePasswordsAreMatching"
+        }
+      }
+    },
+    "YearsOfExperience": {
+      "sectionId": 2
+    },
+    "Packages": {
+      "sectionId": 2
+    },
+    "Skills": {
+      "sectionId": 2
+    },
+    "FromTime": {
+      "sectionId": 2
+    },
+    "AllowOffers": {
+      "sectionId": 2,
+      "eventTriggers": {
+        "onChange": {
+          "handler": "toggleCommunicationChannels",
+          "parameters": [ "PreferredCommunicationChannel" ]
+        }
+      }
+    },
+    "PreferredCommunicationChannel": {
+      "sectionId": 2,
+      "hidden": true
+    },
+    "Signature": {
+      "sectionId": 2,
+      "validation": {
+        "required": true
+      }
+    },
+    "CV": {
+      "sectionId": 2,
+      "validation": {
+        "required": true
+      }
+    },
+    "ProfilePicture": {
+      "sectionId": 2
+    },
+    "Rating": {
+      "sectionId": 2,
+      "starNumber": 10,
+      "iconOnClass": "",
+      "iconOffClass": ""
+    },
+    "Recaptcha": {
+      "sectionId": 2,
+      "theme": "light",
+      "size": "normal"
+    }
+  }
+}

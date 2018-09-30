@@ -1,0 +1,175 @@
+{
+  "AM": "am",
+  "PM": "pm",
+  "legends": {
+    "PersonalInfo": "Personal Info",
+    "AccountInfo": "Account Info"
+  },
+  "labels": {
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "DateOfBirth": "Date Of Birth",
+    "DateOfBirthHijri": "Date Of Birth (Hijri)",
+    "Address": "Address",
+    "Gender": "Gender",
+    "Governorate": "Governorate",
+    "City": "City",
+    "Password": "Password",
+    "ConfirmPassword": "Confirm Password",
+    "YearsOfExperience": "Years Of Experience",
+    "Packages": "Packages",
+    "AllowOffers": "Can we send you our offers?",
+    "PreferredCommunicationChannel": "Preferred Communication Channel",
+    "ProfilePicture": "Profile Picture",
+    "CV": "CV",
+    "PhoneNumber": "Phone Number",
+    "Skills": "Skills",
+    "Signature": "Signature",
+    "Recaptcha": "Recaptcha",
+    "FromTime": "From Time",
+    "Location": "Location",
+    "Dependents": "Dependents",
+    "Rating": "Please Rate Us"
+  },
+  "placeHolders": {
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "DateOfBirth": "Date Of Birth",
+    "DateOfBirthHijri": "Date Of Birth (Hijri)",
+    "Address": "Address",
+    "Governorate": "Governorate",
+    "City": "City",
+    "Password": "Password",
+    "ConfirmPassword": "Confirm Password",
+    "YearsOfExperience": "Years Of Experience",
+    "Packages": "Packages",
+    "PhoneNumber": "Phone Number",
+    "Skills": "Skills. Please enter your skills.",
+    "Signature": "Signature",
+    "FromTime": "From Time",
+    "Location": "Location"
+  },
+  "tooltips": {
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "DateOfBirth": "Date Of Birth",
+    "DateOfBirthHijri": "Date Of Birth (Hijri)",
+    "Address": "Address",
+    "Gender": "Gender",
+    "Governorate": "Governorate",
+    "City": "City",
+    "Password": "Password",
+    "ConfirmPassword": "Confirm Password",
+    "YearsOfExperience": "Years Of Experience",
+    "Packages": "Packages",
+    "AllowOffers": "Can we send you our offers?",
+    "PreferredCommunicationChannel": "Preferred Communication Channel",
+    "ProfilePicture": "Profile Picture",
+    "CV": "CV",
+    "PhoneNumber": "Phone Number",
+    "Skills": "Skills. Please enter your skills.",
+    "Signature": "Signature",
+    "Recaptcha": "Please complete the captcha challenge.",
+    "FromTime": "From Time",
+    "Location": "Location",
+    "Dependents": "Dependents",
+    "Rating": "Rate Us"
+  },
+  "validations": {
+    "ValidationSummaryErrors": "Please fix the below validation errors in order to continue:",
+    "PasswordMismatch": "The passwords don't match.",
+    "required": {
+      "FirstName": "'First Name' is required.",
+      "LastName": "'Last Name' is required.",
+      "DateOfBirth": "'Date Of Birth' is required.",
+      "DateOfBirthHijri": "'Date Of Birth (Hijri)' is required.",
+      "Address": "'Address' is required.",
+      "Gender": "'Gender' is required.",
+      "Governorate": "'Governorate' is required.",
+      "City": "'City' is required.",
+      "Password": "'Password' is required.",
+      "ConfirmPassword": "'Confirm Password' is required.",
+      "YearsOfExperience": "'Years Of Experience' is required.",
+      "PhoneNumber": "'Phone Number' is required.",
+      "Signature": "'Signature' is required.",
+      "Recaptcha": "Please complete the captcha challenge.",
+      "FromTime": "'FromTime' is required.",
+      "ProfilePicture": "'Profile Picture' is required.",
+      "Rating": "'Rate Us' is required"
+    },
+    "pattern": {
+      "FirstName": "'First name' should be text.",
+      "LastName": "'Last name' should be text.",
+      "YearsOfExperience": "'Years Of Experience' must be a number.",
+      "PhoneNumber": "'Phone Number' should start with 70 or 71 or 76 or 78.",
+      "Password": "'Password' must be at least 4 characters, no more than 8 characters, and must include at least one upper case letter, one lower case letter, and one numeric digit."
+    },
+    "range": {
+      "Packages": "Choose between 1 to 2 'Packages'.",
+      "PreferredCommunicationChannel": "Choose between 1 to 3 'Preferred Communication Channels'.",
+      "ProfilePicture": "Choose only 1 'Profile Picture'.",
+      "Skills": "Choose between 2 to 4 'Skills'.",
+      "Dependents": "Add between 1 to 3 'Dependents'.",
+      "Location": "Choose between 1 to 2 'Locations'.",
+      "CV": "Choose between 1 to 4 'Documents'."
+    },
+    "fileSize": {
+      "ProfilePicture": "The 'Profile Picture' exceeds the size limit.",
+      "CV": "The 'CV' exceeds the size limit."
+    },
+    "fileType": {
+      "ProfilePicture": "You can only choose an image for the 'Profile Picture'.",
+      "CV": "You can only choose one document for the 'CV'."
+    }
+  },
+  "htmlSnippets": {
+    "SignupIntroduction": "<div><h3>Please fill the required fields and submit the form.</h3><h4>Make sure you qualify for the following criteria:</h4><ol><li>Must be Lebanese.</li><li>Must be at least 30 years old.</li></ol></div>"
+  },
+  "buttons": {
+    "Choose": "Choose",
+    "Upload": "Upload",
+    "Cancel": "Cancel",
+    "Save": "Save",
+    "Submit": "Submit",
+    "Clear": "Clear",
+    "Add": "Add",
+    "Print": "Print",
+    "Ok": "Ok",
+    "Next": "Next",
+    "Previous": "Previous"
+  },
+  "notifications": {
+    "get": {
+      "errorMessageTitle": "Error",
+      "errorMessageDetails": "An unexpected error has occurred while loading the form."
+    },
+    "save": {
+      "errorMessageTitle": "Error",
+      "errorMessageDetails": "An unexpected error has occurred while saving the form.",
+      "successMessageTitle": "Success",
+      "successMessageDetails": "Your request was successfully saved."
+    },
+    "submit": {
+      "errorMessageTitle": "Error",
+      "errorMessageDetails": "An unexpected error has occurred while submitting the form.",
+      "successMessageTitle": "Success",
+      "successMessageDetails": "Your request was successfully submitted."
+    }
+  },
+  "cssClasses": {
+    "ValidationError": "validation-error"
+  },
+  "calendarOptions": {
+    "firstDayOfWeek": 0,
+    "dayNames": [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
+    "dayNamesShort": [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+    "dayNamesMin": [ "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ],
+    "monthNames": [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
+    "monthNamesShort": [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+    "today": "Today",
+    "clear": "Clear"
+  },
+  "New": "New",
+  "Edit": "Edit",
+  "Display": "Display"
+}

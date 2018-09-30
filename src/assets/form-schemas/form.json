@@ -1,0 +1,57 @@
+{
+  "settings": {
+    "version": "1.0",
+    "validationSummaryMode": "List",
+    "sectionMode": "Tabs",
+    "sectionLocation": "Top",
+    "allFieldsSource": "./assets/fields/all-fields-list.json",
+    "postMode": "FormData",
+    "spinnerSourceUrl": "./assets/images/progress-indicator.gif",
+    "baseEndPointUrls": {
+      "mainEndPointUrl": "http://localhost:65310/api",
+      "secondaryEndPointUrl": "http://localhost:65310/api"
+    }
+  },
+  "notifications": {
+    "showResultMessage": true,
+    "getErrorMessageTitle": "notifications.get.errorMessageTitle",
+    "getErrorMessageDetails": "notifications.get.errorMessageDetails",
+    "saveErrorMessageTitle": "notifications.save.errorMessageTitle",
+    "saveErrorMessageDetails": "notifications.save.errorMessageDetails",
+    "saveSuccessMessageTitle": "notifications.save.successMessageTitle",
+    "saveSuccessMessageDetails": "notifications.save.successMessageDetails",
+    "submitErrorMessageTitle": "notifications.submit.errorMessageTitle",
+    "submitErrorMessageDetails": "notifications.submit.errorMessageDetails",
+    "submitSuccessMessageTitle": "notifications.submit.successMessageTitle",
+    "submitSuccessMessageDetails": "notifications.submit.successMessageDetails"
+  },
+  "buttons": {
+    "cssClass": "form-controls formButtons",
+    "main": {
+      "clear": {
+        "name": "clear",
+        "label": "buttons.Clear",
+        "tooltip": "buttons.Clear",
+        "hidden": false,
+        "disabled": false,
+        "cssClass": "btn btn-secondary"
+      },
+      "save": {
+        "name": "save",
+        "label": "buttons.Save",
+        "tooltip": "buttons.Save",
+        "hidden": false,
+        "disabled": false,
+        "cssClass": "btn btn-success"
+      },
+      "submit": {
+        "name": "submit",
+        "label": "buttons.Submit",
+        "tooltip": "buttons.Submit",
+        "hidden": false,
+        "disabled": false,
+        "cssClass": "btn btn-primary"
+      }
+    }
+  }
+}

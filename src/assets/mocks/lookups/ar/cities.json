@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "name": "بيروت",
+    "governoratedId": "1"
+  },
+  {
+    "id": "2",
+    "name": "الشويفات",
+    "governoratedId": "2"
+  },
+  {
+    "id": "3",
+    "name": "عاليه",
+    "governoratedId": "2"
+  },
+  {
+    "id": "4",
+    "name": "طرابلس",
+    "governoratedId": "3"
+  },
+  {
+    "id": "5",
+    "name": "عكار",
+    "governoratedId": "3"
+  },
+  {
+    "id": "6",
+    "name": "صيدا",
+    "governoratedId": "4"
+  },
+  {
+    "id": "7",
+    "name": "بعلبك",
+    "governoratedId": "5"
+  }
+]

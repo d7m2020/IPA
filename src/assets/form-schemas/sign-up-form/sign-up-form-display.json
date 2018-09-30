@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "version": "1.0",
+    "formMode": "Display",
+    "sectionMode": "None",
+    "sourceFormSchemas": [
+      "./assets/form-schemas/form.json",
+      "./assets/form-schemas/sign-up-form/sign-up-form-new.json"
+    ]
+  },
+  "buttons": {
+    "additionalButtons": [
+      {
+        "name": "print",
+        "label": "buttons.Print",
+        "tooltip": "buttons.Print",
+        "hidden": false,
+        "disabled": false,
+        "cssClass": "btn btn-info",
+        "eventTriggers": {
+          "click": "printForm"
+        }
+      }
+    ]
+  },
+  "endpoints": {
+    "get": "/assets/mocks/{languageToken}/sign-up-form-item-display-{id}.json",
+    "save": "",
+    "submit": ""
+  },
+  "sections": [],
+  "fields": {
+    "Password": {
+      "hidden": true
+    },
+    "ConfirmPassword": {
+      "hidden": true
+    },
+    "Recaptcha": {
+      "hidden": true
+    }
+  }
+}

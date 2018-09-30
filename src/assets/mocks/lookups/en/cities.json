@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "name": "Beirut",
+    "governoratedId": "1"
+  },
+  {
+    "id": "2",
+    "name": "Choueifat",
+    "governoratedId": "2"
+  },
+  {
+    "id": "3",
+    "name": "Aley",
+    "governoratedId": "2"
+  },
+  {
+    "id": "4",
+    "name": "Tripoli",
+    "governoratedId": "3"
+  },
+  {
+    "id": "5",
+    "name": "Akkar",
+    "governoratedId": "3"
+  },
+  {
+    "id": "6",
+    "name": "Sidon",
+    "governoratedId": "4"
+  },
+  {
+    "id": "7",
+    "name": "Baalbek",
+    "governoratedId": "5"
+  }
+]

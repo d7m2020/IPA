@@ -1,0 +1,175 @@
+{
+  "AM": "صباحا",
+  "PM": "مساء",
+  "legends": {
+    "PersonalInfo": "معلومات شخصيه",
+    "AccountInfo": "معلومات الحساب"
+  },
+  "labels": {
+    "FirstName": "الإسم الأول",
+    "LastName": "الإسم الأخير",
+    "DateOfBirth": "تاريخ الولادة",
+    "DateOfBirthHijri": "تاريخ الولادة بالهجري",
+    "Address": "العنوان",
+    "Gender": "الجنس",
+    "Governorate": "المحافظة",
+    "City": "المدينة",
+    "Password": "كلمة السر",
+    "ConfirmPassword": "تأكيد كلمة السر",
+    "YearsOfExperience": "سنوات الخبرة",
+    "Packages": "باقات",
+    "AllowOffers": "هل يمكننا ارسال عروضات",
+    "PreferredCommunicationChannel": "قناة الاتصال المفضلة",
+    "ProfilePicture": "الصورة الشخصية",
+    "CV": "السيرة الذاتية",
+    "PhoneNumber": "رقم الهاتف",
+    "Skills": "الخبرات",
+    "Signature": "الامضاء",
+    "Recaptcha": "كلمة التحقق",
+    "FromTime": "من",
+    "Location": "موقع",
+    "Dependents": "المعالين",
+    "Rating": "يرجى تقييم لنا"
+  },
+  "placeHolders": {
+    "FirstName": "الإسم الأول",
+    "LastName": "الإسم الأخير",
+    "DateOfBirth": "تاريخ الولادة",
+    "DateOfBirthHijri": "تاريخ الولادة بالهجري",
+    "Address": "العنوان",
+    "Governorate": "المحافظة",
+    "City": "المدينة",
+    "Password": "كلمة السر",
+    "ConfirmPassword": "تأكيد كلمة السر",
+    "YearsOfExperience": "سنوات الخبرة",
+    "Packages": "باقات",
+    "PhoneNumber": "رقم الهاتف",
+    "Skills": "الخبرات",
+    "Signature": "الامضاء",
+    "FromTime": "من",
+    "Location": "موقع"
+  },
+  "tooltips": {
+    "FirstName": "الإسم الأول",
+    "LastName": "الإسم الأخير",
+    "DateOfBirth": "تاريخ الولادة",
+    "DateOfBirthHijri": "تاريخ الولادة بالهجري",
+    "Address": "العنوان",
+    "Gender": "الجنس",
+    "Governorate": "المحافظة",
+    "City": "المدينة",
+    "Password": "كلمة السر",
+    "ConfirmPassword": "تأكيد كلمة السر",
+    "YearsOfExperience": "سنوات الخبرة",
+    "Packages": "باقات",
+    "AllowOffers": "هل يمكننا ارسال عروضات",
+    "PreferredCommunicationChannel": "قناة الاتصال المفضلة",
+    "ProfilePicture": "الصورة الشخصية",
+    "CV": "السيرة الذاتية",
+    "PhoneNumber": "رقم الهاتف",
+    "Skills": "الخبرات",
+    "Signature": "الامضاء",
+    "Recaptcha": "يرجى إكمال اختبار كلمة التحقق",
+    "FromTime": "من",
+    "Location": "موقع",
+    "Dependents": "المعالين",
+    "Rating": "قيمنا"
+  },
+  "validations": {
+    "ValidationSummaryErrors": "يرجى تصحيح أخطاء التحقق أدناه من أجل المتابعة:",
+    "PasswordMismatch": "كلمة السر غير مطابقة",
+    "required": {
+      "FirstName": "الاسم الاول مطلوب",
+      "LastName": "الاسم الاخير مطلوب",
+      "DateOfBirth": "تاريخ الولادة مطلوب",
+      "DateOfBirthHijri": "تاريخ الهجري مطلوب",
+      "Address": "العنوان مطلوب",
+      "Gender": "الجنس مطلوب",
+      "Governorate": "المحافظة مطلوبة",
+      "City": "المدينة مطلوبة",
+      "Password": "كلمة السر مطلوبة",
+      "ConfirmPassword": "تاكيد كلمة السر مطلوبة",
+      "YearsOfExperience": "سنوات الخبرة مطلوبة",
+      "PhoneNumber": "رقم الهاتف مطلوب",
+      "Signature": "الامضاء مطلوب",
+      "Recaptcha": "يرجى إكمال اختبار كلمة التحقق",
+      "FromTime": "من مطلوب",
+      "ProfilePicture": "صورة الملف الشخصي مطلوبة.",
+      "Rating": "قيمنا مطلوبة."
+    },
+    "pattern": {
+      "FirstName": "الاسم الأول يجب ان يكون احرف فقط",
+      "LastName": "الاسم الاخير  يجب ان يكون احرف فقط",
+      "YearsOfExperience": "سنوات الخبرة  يجب ان يكون ارقام فقط",
+      "PhoneNumber": "رقم الهاتف يجب ان يتطابق مع النمط.",
+      "Password": "يجب أن تتكون كلمة المرور من 4 أحرف على الأقل ولا تزيد عن 8 أحرف. كما يجب أن تتضمن حرفًا كبيرًا على الأقل وحرفًا صغيرًا واحدًا ورقمًا واحدًا."
+    },
+    "range": {
+      "Packages": "اختر بين 1 إلى 2 باقات.",
+      "PreferredCommunicationChannel": "اختر من 1 إلى 3 قنوات اتصال مفضلة.",
+      "ProfilePicture": "اختر صورة ملف تعريف واحدة فقط.",
+      "Skills": "ختر من 2 إلى 4 مهارات.",
+      "Dependents": "قم بإضافة بين 1 إلى 3 معالين.",
+      "Location": "اختر من 1 إلى 2 مواقع.",
+      "CV": "قم بإضافة بين 1 إلى 4 مستندات."
+    },
+    "fileSize": {
+      "ProfilePicture": " الصورة الشخصية تخطط الحجم المطلوب",
+      "CV": " السيرة الذاتية تخطط الحجم المطلوب"
+    },
+    "fileType": {
+      "ProfilePicture": "يمكن أختيار فقط نوع صورة  للصورة الشخصية.",
+      "CV": "يمكنك فقط اختيار وثيقة واحدة لـ 'السيرة الذاتية'."
+    }
+  },
+  "htmlSnippets": {
+    "SignupIntroduction": "<div><h3> يرجى ملء الحقول المطلوبة وإرسال النموذج. </h3><h4> تأكد من أنك مؤهل للمعايير التالية: </h4><ol> <li> يجب أن تكون لبنانيًا. </li> <li> يجب أن يكون عمرك 30 عامًا على الأقل. </li> </ol></div>"
+  },
+  "buttons": {
+    "Choose": "إختيار",
+    "Upload": "تحميل",
+    "Cancel": "إلغاء",
+    "Save": "حفظ",
+    "Submit": "إرسال",
+    "Clear": "مسح النموذج",
+    "Add": "إضافة",
+    "Print": "طباعة",
+    "Ok": "حسنا",
+    "Next": "التالى",
+    "Previous": "السابق"
+  },
+  "notifications": {
+    "get": {
+      "errorMessageTitle": "خطأ",
+      "errorMessageDetails": "حدث خطأ غير متوقع أثناء تحميل النموذج."
+    },
+    "save": {
+      "errorMessageTitle": "خطأ",
+      "errorMessageDetails": "لقد حدث خطأ غير متوقع أثناء حفظ النموذج.",
+      "successMessageTitle": "نجاح",
+      "successMessageDetails": "تم حفظ طلبك بنجاح."
+    },
+    "submit": {
+      "errorMessageTitle": "خطأ",
+      "errorMessageDetails": "حدث خطأ غير متوقع أثناء إرسال النموذج.",
+      "successMessageTitle": "نجاح",
+      "successMessageDetails": "تم إرسال طلبك بنجاح."
+    }
+  },
+  "cssClasses": {
+    "ValidationError": "validation-error"
+  },
+  "calendarOptions": {
+    "firstDayOfWeek": 0,
+    "dayNames": [ "الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت" ],
+    "dayNamesShort": [ "أح", "إث", "ثل", "أر", "خم", "جم", "سب" ],
+    "dayNamesMin": [ "أح", "إث", "ثل", "أر", "خم", "جم", "سب" ],
+    "monthNames": [ "يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "اكتوبر", "نوفمبر", "ديسمبر" ],
+    "monthNamesShort": [ "ين", "فب", "ما", "أب", "ما", "يول", "يول", "أغ", "سب", "اك", "نو", "دي" ],
+    "today": "اليوم",
+    "clear": "مسح"
+  },
+  "New": "جديد",
+  "Edit": "تحرير",
+  "Display": "عرض"
+}

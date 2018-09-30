@@ -1,0 +1,720 @@
+{
+  "fields": [
+    {
+      "fieldType": "info",
+      "name": "Introduction",
+      "htmlSnippet": "htmlSnippets.SignupIntroduction",
+      "hidden": false,
+      "cssClasses": {
+        "wrapper": "col-md-12 col-sm-12 col-xs-12",
+        "container": "input-container"
+      }
+    },
+    {
+      "fieldType": "text",
+      "name": "FirstName",
+      "label": "labels.FirstName",
+      "placeholder": "placeHolders.FirstName",
+      "tooltip": "tooltips.FirstName",
+      "autoComplete": "given-name",
+      "hidden": false,
+      "readonly": false,
+      "disabled": false,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "pattern": "^[a-zA-Z ]*$",
+        "length": 30,
+        "requiredText": "validations.required.FirstName",
+        "patternText": "validations.pattern.FirstName"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "text",
+      "name": "LastName",
+      "label": "labels.LastName",
+      "placeholder": "placeHolders.LastName",
+      "tooltip": "tooltips.LastName",
+      "autoComplete": "family-name",
+      "hidden": false,
+      "readonly": false,
+      "disabled": false,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "pattern": "^[a-zA-Z ]*$",
+        "length": 30,
+        "requiredText": "validations.required.LastName",
+        "patternText": "validations.pattern.LastName"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "datetime",
+      "name": "DateOfBirth",
+      "label": "labels.DateOfBirth",
+      "placeholder": "placeHolders.DateOfBirth",
+      "tooltip": "tooltips.DateOfBirth",
+      "readonly": true,
+      "disabled": false,
+      "showIcon": true,
+      "hidden": false,
+      "showTime": false,
+      "monthNavigator": true,
+      "yearNavigator": true,
+      "dateFormat": "dd/mm/yy",
+      "displayDateFormat": "dd/MM/yyyy",
+      "formDataDateFormat": "MM/dd/yyyy",
+      "hourFormat": "24",
+      "defaultDate": "Function:getTodayPlusXYears,-20",
+      "minDate": "Function:getTodayPlusXYears,-30",
+      "maxDate": "Function:getToday",
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.DateOfBirth"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "datetimehijri",
+      "name": "DateOfBirthHijri",
+      "label": "labels.DateOfBirthHijri",
+      "placeholder": "placeHolders.DateOfBirthHijri",
+      "tooltip": "tooltips.DateOfBirthHijri",
+      "hidden": false,
+      "readonly": true,
+      "disabled": false,
+      "showWeekNumbers": false,
+      "showIcon": true,
+      "displayMonths": 1,
+      "outsideDays": "visible",
+      "showWeekdays": true,
+      "minDate": "Function:getTodayPlusXYearsInHijri,-30",
+      "maxDate": "Function:getTodayInHijri",
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.DateOfBirthHijri"
+      },
+      "data": {
+        "value": null
+      }
+    },
+    {
+      "fieldType": "time",
+      "name": "FromTime",
+      "label": "labels.FromTime",
+      "placeholder": "placeHolders.FromTime",
+      "tooltip": "tooltips.FromTime",
+      "hidden": false,
+      "disabled": false,
+      "setTime": "Function:getTime,8,30,AM",
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.FromTime"
+      },
+      "data": {
+        "value": null
+      }
+    },
+    {
+      "fieldType": "editor",
+      "name": "Address",
+      "label": "labels.Address",
+      "placeholder": "placeHolders.Address",
+      "tooltip": "tooltips.Address",
+      "readonly": false,
+      "hidden": false,
+      "height": "300px",
+      "showToolbar": false,
+      "cssClasses": {
+        "wrapper": "col-md-12 col-sm-12 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "length": 500,
+        "requiredText": "validations.required.Address"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "radiobutton",
+      "name": "Gender",
+      "label": "labels.Gender",
+      "placeholder": "placeHolders.Gender",
+      "tooltip": "tooltips.Gender",
+      "hidden": false,
+      "readonly": false,
+      "disabled": false,
+      "enablefilter": true,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.Gender"
+      },
+      "data": {
+        "optionsEndpoint": "Gender",
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "select",
+      "name": "Governorate",
+      "label": "labels.Governorate",
+      "placeholder": "placeHolders.Governorate",
+      "tooltip": "tooltips.Governorate",
+      "readonly": false,
+      "disabled": false,
+      "hidden": false,
+      "enablefilter": true,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.Governorate"
+      },
+      "data": {
+        "optionsEndpoint": "Governorate",
+        "value": null
+      }
+    },
+    {
+      "fieldType": "select",
+      "name": "City",
+      "label": "labels.City",
+      "placeholder": "placeHolders.City",
+      "tooltip": "tooltips.City",
+      "readonly": false,
+      "disabled": false,
+      "enablefilter": true,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.City"
+      },
+      "data": {
+        "optionsEndpoint": "City",
+        "value": null
+      }
+    },
+    {
+      "fieldType": "password",
+      "name": "Password",
+      "label": "labels.Password",
+      "placeholder": "placeHolders.Password",
+      "tooltip": "tooltips.Password",
+      "autoComplete": "current-password",
+      "hidden": false,
+      "readonly": false,
+      "disabled": false,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "pattern": "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$",
+        "requiredText": "validations.required.Password",
+        "patternText": "validations.pattern.Password"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "password",
+      "name": "ConfirmPassword",
+      "label": "labels.ConfirmPassword",
+      "placeholder": "placeHolders.ConfirmPassword",
+      "tooltip": "tooltips.ConfirmPassword",
+      "hidden": false,
+      "readonly": false,
+      "disabled": false,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.ConfirmPassword"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "number",
+      "name": "YearsOfExperience",
+      "label": "labels.YearsOfExperience",
+      "placeholder": "placeHolders.YearsOfExperience",
+      "tooltip": "tooltips.YearsOfExperience",
+      "hidden": false,
+      "disabled": false,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "pattern": "^[0-9]*$",
+        "requiredText": "validations.required.YearsOfExperience",
+        "patternText": "validations.pattern.YearsOfExperience"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "multiselect",
+      "name": "Packages",
+      "label": "labels.Packages",
+      "placeholder": "placeHolders.Packages",
+      "tooltip": "tooltips.Packages",
+      "hidden": false,
+      "disabled": false,
+      "enablefilter": true,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "min": 1,
+        "max": 2,
+        "rangeText": "validations.range.Packages"
+      },
+      "data": {
+        "optionsEndpoint": "Packages",
+        "value": null
+      }
+    },
+    {
+      "fieldType": "checkbox",
+      "name": "AllowOffers",
+      "label": "labels.AllowOffers",
+      "tooltip": "tooltips.AllowOffers",
+      "readonly": false,
+      "hidden": false,
+      "disabled": false,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "min": 0
+      },
+      "data": {
+        "optionsEndpoint": "AllowOffers",
+        "value": null
+      }
+    },
+    {
+      "fieldType": "checkbox",
+      "name": "PreferredCommunicationChannel",
+      "label": "labels.PreferredCommunicationChannel",
+      "tooltip": "tooltips.PreferredCommunicationChannel",
+      "hidden": false,
+      "disabled": false,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "min": 1,
+        "max": 3,
+        "rangeText": "validations.range.PreferredCommunicationChannel"
+      },
+      "data": {
+        "optionsEndpoint": "PreferredCommunicationChannel",
+        "value": null
+      }
+    },
+    {
+      "fieldType": "fileupload",
+      "name": "CV",
+      "label": "labels.CV",
+      "tooltip": "tooltips.CV",
+      "disabled": false,
+      "hidden": false,
+      "mode": "advanced",
+      "auto": false,
+      "multiple": "true",
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container fileupload",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "min": 1,
+        "max": 4,
+        "maxFileSizeInBytes": "1000000",
+        "accept": ".doc,.xls,.pdf,.docx,.xlsx",
+        "rangeText": "validations.range.CV",
+        "invalidFileSizeText": "validations.fileSize.CV",
+        "invalidFileTypeText": "validations.fileType.CV"
+      },
+      "buttons": {
+        "showCancelButton": true,
+        "showUploadButton": true,
+        "chooseLabel": "buttons.Choose",
+        "uploadLabel": "buttons.Upload",
+        "cancelLabel": "buttons.Cancel"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "imagecropper",
+      "name": "ProfilePicture",
+      "label": "labels.ProfilePicture",
+      "tooltip": "tooltips.ProfilePicture",
+      "disabled": false,
+      "hidden": false,
+      "cropperSettings": {
+        "width": 200,
+        "height": 200,
+        "canvasWidth": 500,
+        "canvasHeight": 300,
+        "minWidth": 50,
+        "minHeight": 50,
+        "rounded": true
+      },
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "maxFileSizeInBytes": "1000000",
+        "requiredText": "validations.required.ProfilePicture",
+        "invalidFileSizeText": "validations.fileSize.ProfilePicture",
+        "invalidFileTypeText": "validations.fileType.ProfilePicture"
+      },
+      "buttons": {
+        "chooseLabel": "buttons.Choose"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "chips",
+      "name": "Skills",
+      "label": "labels.Skills",
+      "placeholder": "placeHolders.Skills",
+      "tooltip": "tooltips.Skills",
+      "disabled": false,
+      "hidden": false,
+      "addOnTab": true,
+      "addOnBlur": true,
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "min": 2,
+        "max": 4,
+        "allowDuplicate": false,
+        "rangeText": "validations.range.Skills"
+      },
+      "data": {
+        "value": null
+      }
+    },
+    {
+      "fieldType": "editor",
+      "name": "Signature",
+      "label": "labels.Signature",
+      "placeholder": "placeHolders.Signature",
+      "tooltip": "tooltips.Signature",
+      "readonly": false,
+      "hidden": false,
+      "height": "300px",
+      "showToolbar": true,
+      "cssClasses": {
+        "wrapper": "col-md-12 col-sm-12 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": false,
+        "requiredText": "validations.required.Signature"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "mask",
+      "name": "PhoneNumber",
+      "label": "labels.PhoneNumber",
+      "placeholder": "placeHolders.PhoneNumber",
+      "tooltip": "tooltips.PhoneNumber",
+      "readonly": false,
+      "disabled": false,
+      "autoClear": false,
+      "unmask": false,
+      "hidden": false,
+      "slotChar": "_",
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "pattern": "(70|71|76|78)+/+[0-9]{6}",
+        "mask": "99/999999",
+        "characterPattern": "",
+        "length": 15,
+        "requiredText": "validations.required.PhoneNumber",
+        "patternText": "validations.pattern.PhoneNumber"
+      },
+      "data": {
+        "value": ""
+      }
+    },
+    {
+      "fieldType": "recaptcha",
+      "name": "Recaptcha",
+      "label": "labels.Recaptcha",
+      "tooltip": "tooltips.Recaptcha",
+      "siteKey": "6LfPv2MUAAAAAFtneouFn9VppscLGtBHs0vVIvfx",
+      "theme": "dark",
+      "size": "compact",
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.Recaptcha"
+      }
+    },
+    {
+      "fieldType": "masterdetail",
+      "name": "Dependents",
+      "label": "labels.Dependents",
+      "tooltip": "tooltips.Dependents",
+      "sectionId": 1,
+      "hidden": false,
+      "readonly": false,
+      "disabled": false,
+      "details": {
+        "configurationSourceUrl": "./assets/form-schemas/dependent/dependent-form-new.json",
+        "displayFields": [
+          "FirstName",
+          "DateOfBirth",
+          "City",
+          "Gender"
+        ]
+      },
+      "cssClasses": {
+        "wrapper": "col-md-12 col-sm-12 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "minCount": 1,
+        "maxCount": 3,
+        "rangeText": "validations.range.Dependents"
+      },
+      "data": {
+        "value": null
+      }
+    },
+    {
+      "fieldType": "location",
+      "name": "Location",
+      "label": "labels.Location",
+      "placeholder": "placeHolders.Location",
+      "tooltip": "tooltips.Location",
+      "sectionId": 1,
+      "hidden": false,
+      "html2CanvasIgnore": true,
+      "readonly": false,
+      "disabled": false,
+      "zoomControl": false,
+      "zoom": 10,
+      "defaultLocation": {
+        "latitude": 33.2708,
+        "longitude": 35.2048
+      },
+      "markerSettings": {
+        "defaultNewMarker": {
+          "draggable": true,
+          "infoHtml": "",
+          "eventTriggers": {
+            "markerClick": {
+              "handler": "openInGoogleMaps"
+            }
+          }
+        }
+      },
+      "cssClasses": {
+        "wrapper": "col-md-12 col-sm-12 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "min": 1,
+        "max": 2,
+        "rangeText": "validations.range.Location"
+      },
+      "data": {
+        "value": null
+      }
+    },
+    {
+      "fieldType": "rating",
+      "name": "Rating",
+      "label": "labels.Rating",
+      "tooltip": "tooltips.Rating",
+      "hidden": false,
+      "readonly": false,
+      "disabled": false,
+      "starNumber": 3,
+      "cancelIcon": true,
+      "iconCancelClass": "pi pi-times",
+      "iconOnClass": "pi pi-circle-on",
+      "iconOffClass": "pi pi-circle-off",
+      "cssClasses": {
+        "wrapper": "col-md-6 col-sm-6 col-xs-12",
+        "container": "input-container",
+        "label": "form-label",
+        "input": "form-input",
+        "display": "form-display",
+        "validation": "alert alert-danger"
+      },
+      "validation": {
+        "required": true,
+        "requiredText": "validations.required.Rating"
+      },
+      "data": {
+        "value": 0
+      }
+    }
+  ]
+}

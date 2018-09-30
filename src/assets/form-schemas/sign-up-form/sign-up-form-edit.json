@@ -1,0 +1,23 @@
+{
+  "settings": {
+    "version": "1.0",
+    "formMode": "Edit",
+    "sourceFormSchemas": [
+      "./assets/form-schemas/form.json",
+      "./assets/form-schemas/sign-up-form/sign-up-form-new.json"
+    ]
+  },
+  "endpoints": {
+    "get": "/assets/mocks/sign-up-form-item-{id}.json",
+    "save": "{mainEndPointUrl}/signupfromform",
+    "submit": "{secondaryEndPointUrl}/signupfromform"
+  },
+  "fields": {
+    "Password": {
+      "hidden": true
+    },
+    "ConfirmPassword": {
+      "hidden": true
+    }
+  }
+}
